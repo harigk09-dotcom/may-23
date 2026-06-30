@@ -73,3 +73,4 @@ ls
 ls 
 git log --oneline 
 16.  Observe the ids ( Deleted file id will be retained) 
+a
