@@ -1,0 +1,75 @@
+Exp 5: Git history: Author, Date and Commit message 
+1. Initialize your git repository         git init 
+2. Create a new directory                  mkdir dir 
+3. Change directory                           cd dir 
+4. Create 4 files                                  touch file1.txt 
+5. Enter to the file, type contents       Save the file 
+6. Add the file to the storage area      git add file1.txt 
+7. Commit your file                            git commit -m “ Committing file1” 
+8. Repeat the same for 3 files 
+9. List the files                                    ls 
+10.  Log the file ids                               
+ git log –oneline 
+11.  Show the details of one file            
+12.  Show the details of 3 files              
+git show id / git log -n 1 id 
+git log -n 3 id1 id2 id3 
+
+Exp 6: Git history: Author, Date between “Since and Until” 
+1. If files already present earlier then            
+git log --author=”Your user name” --since= “a month ago date(yyyy
+mm-dd)” --until=”Today’s Date(yyyy-mm-dd)” 
+2. If files not present then create atleast 5 files then, 
+git log --author=”Your user name” --since= “a month ago date(yyyy
+mm-dd)” --until=”Today’s Date(yyyy-mm-dd)” 
+
+Exp 7: Git history: Last Five commits 
+1. Initialize your git repository         
+2. Create a new directory                  
+3. Change directory                           
+4. Create 6 files                                  
+5. Enter to the file, type contents       
+6. Add the file to the storage area      
+7. Commit your file                            
+8. Repeat the same for 5 files 
+9. List all the files                               
+10.  Log last 5 commits      
+
+Exp 8: Git history: Revert 
+1. Initialize your git repository         
+2. Create a new directory                  
+3. Change directory                           
+4. Create 3 files                                  
+5. Enter to the file, type contents       
+6. Add the file to the storage area      
+git init 
+mkdir dir 
+cd dir 
+touch file1.txt 
+Save the file 
+git add file1.txt 
+git commit -m “ Committing file1” 
+ls 
+ git log -n 5 
+git init 
+mkdir dir 
+cd dir 
+touch file1.txt 
+Save the file 
+git add file1.txt 
+7. Commit your file                            
+git commit -m “ Committing file1” 
+8. Repeat the same for 2 files 
+9. List all the files                               
+10.  Log the ids                                    
+11.  Revert the id                                 
+12.  Change the revert message 
+13.  List the files                                    
+14.  Reverted file will be deleted 
+15.  Log the ids                                      
+ls 
+ git log --oneline 
+ git revert id 
+ls 
+git log --oneline 
+16.  Observe the ids ( Deleted file id will be retained) 
