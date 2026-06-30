@@ -1,1 +1,80 @@
-hello
+Exp 2: Creating, Merging and Stashing  Branches 
+Merging 
+1. Check for master branch               
+2. Initialize your git repository         
+3. Create a new directory                  
+4. Change directory                           
+5. Create a file                                   
+6. Enter to the file, type contents      
+7. Add the file to the storage area     
+8. Commit your file                           
+9. Create a new branch                      
+10. Create a file in new branch            
+11. Enter to the file, type contents       
+12. Add the file to the storage area      
+13. Commit your file                            
+14.  Enter the master branch                
+15.  Merge both the branches               
+git checkout master 
+git init 
+mkdir dir1 
+cd dir1 
+touch file1.txt 
+Save the file 
+git add file1.txt 
+git commit -m “ Committing file1” 
+git checkout -b new-branch 
+touch file2.txt 
+Save the file 
+git add file2.txt 
+git commit -m “ Committing file2” 
+git checkout master 
+git merge new-branch 
+16. Check the files in both the branches 
+Stashing 
+1. Check for master branch               
+2. Create a new directory                  
+3. Change directory                           
+4. Create a file                                   
+5. Enter to the file, type contents      
+6. Add the file to the storage area     
+7. Commit your file                           
+8. Create a new branch                      
+9. Come back to master                     
+10.  Open the file3                               
+git checkout master 
+mkdir dir2 
+cd dir2 
+touch file3.txt 
+Save the file 
+git add file3.txt 
+git commit -m “ Committing file3” 
+git checkout -b feature-branch 
+git checkout master 
+vi file3.txt 
+  
+11.  Add the changed file                    git add file3.txt 
+12.  Commit the changes                     git commit -m “ Committing                        
+                                                        changed file3” 
+13.  Stash the changes                          git stash save  “ Changes” 
+14.  Move to feature-branch                 git checkout feature-branch 
+15.  Apply the stash                              git stash apply 
+16.  Now check the files  
+ 
+Exp 3: Git Tags and Releases 
+ 
+1. Initialize your git repository         git init 
+2. Create a new directory                  mkdir dir 
+3. Change directory                           cd dir 
+4. Create 4 files                                  touch file1.txt 
+5. Enter to the file, type contents       Save the file 
+6. Add the file to the storage area      git add file1.txt 
+7. Commit your file                            git commit -m “ Committing file1” 
+8. Repeat the same for 3 files 
+9. List the files                                    ls 
+10. Log the file ids                                git log --oneline 
+11.  Tag a recent commit id                   git tag v1.0.0 
+12.  Log the files                                    git log 
+13.  Tag a particular id                           git tag v1.0.1 id 
+14.  Log the files                                    git log 
+15.  Log the tags                                     git tag
